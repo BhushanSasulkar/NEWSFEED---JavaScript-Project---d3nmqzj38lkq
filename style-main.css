@@ -1,0 +1,266 @@
+body {
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+}
+.page1 {
+  background-image: url('main\ page.jpg');
+  background-size: cover;
+}
+.page2 {
+  /* background-image: url(bgc3.jpg); */
+  background-image: url(chai_paper.jpg);
+  /* height: 100%vh; */
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600px;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0f56ee;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px 0;
+  /* transform: translateX(-45rem); */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsItem {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-image: url('bgc7.jpg');
+  border-radius: 15px 50px;
+}
+
+.newsItem h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a6bb8d;
+}
+
+.newsItem p {
+  margin: 0;
+  padding: 10px 10px;
+  color: #fff3e2;
+  line-height: 23px;
+}
+
+.newsItem #box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.newsItem .img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.newsItem #innerbox {
+  flex-grow: 1;
+}
+
+.newsItem #nscontent {
+  margin-bottom: 10px;
+  color: #fff3e2;
+}
+
+.newsItem a {
+  color: blue;
+}
+
+/* .btton {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  } */
+
+.btton {
+  background-color: #0a46eb;
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.taglineContainer {
+  display: block;
+  text-align: center;
+  padding-top: 80px;
+}
+.tagline {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 36px;
+  line-height: 30px;
+  color: rgb(204, 0, 51);
+}
+.firstHalf {
+  display: block;
+  font-size: 45px;
+  font-weight: bold;
+  color: #52e057;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+.secondHalf {
+  display: block;
+  font-size: 45px;
+  font-weight: bold;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.mainTag {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.mainTag button {
+  border-radius: 10px;
+}
+.mainTag button:hover {
+  transform: scale(1.5);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Header Styles */
+header {
+  /* background-color: #333; */
+  color: #e41919;
+  /* padding: 20px; */
+}
+
+/* h1 {
+  font-size: 36px;
+  margin: 0;
+} */
+
+/* Navigation Styles */
+nav {
+  /* background-color: #fff; */
+  /* padding: 20px; */
+  transform: translateY(-5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+#categorySelect {
+  padding: 5px 5px;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* Main Styles */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.newsItem {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.newsItem h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.forflex {
+  display: flex;
+
+  /* transform: translateX(300px); */
+  margin-left: 300px;
+}
+.by {
+  margin-left: 800px;
+}
+
+.newsItem p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img {
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+#innerbox {
+  flex-grow: 1;
+}
+
+#nscontent {
+  margin-bottom: 20px;
+}
+
+/* Animations */
+.firstHalf {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.secondHalf {
+  opacity: 0;
+  transition: opacity 1s ease-in-out 2s;
+}
