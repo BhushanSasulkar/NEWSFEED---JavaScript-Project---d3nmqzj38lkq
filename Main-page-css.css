@@ -1,0 +1,164 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('main\ page.jpg');
+  background-size: cover;
+}
+
+/* Styles for page container */
+.page1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+p {
+  transform: translateY(-70px);
+}
+
+/* Styles for header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  transform: translateY(-70px);
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Styles for tagline container */
+.taglineContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 20px;
+  color: blue;
+}
+
+.tagline .firstHalf {
+  color: #ff9800;
+}
+
+/* Styles for main tag */
+.mainTag {
+  text-align: center;
+}
+
+.btton {
+  display: inline-block;
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  transform: translateY(-70px);
+}
+
+.btton:hover {
+  background-color: #f57c00;
+  transform: translateY(-70px);
+}
+
+.btton:focus {
+  outline: none;
+}
+
+.btton:active {
+  transform: translateY(2px);
+  transform: translateY(-70px);
+}
+
+.btton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* --------------------------- */
+.container {
+  /* /* transform: translateX(200px); */
+  /* transform: translateX(-500px); */
+  transform: translate(40px, -213.5px);
+}
+.both {
+  transform: translateY(100px);
+}
+svg {
+  width: 100px;
+  height: 100px;
+}
+
+/* SMOKE */
+#smoke-1 {
+  stroke-dasharray: 0, 10;
+  animation: smoke 6s ease infinite;
+}
+
+#smoke-2 {
+  stroke-dasharray: 0, 10;
+  animation: smoke 6s 0.5s ease infinite;
+}
+
+@keyframes smoke {
+  0% {
+    stroke-dasharray: 0, 10;
+  }
+  50% {
+    stroke-dasharray: 10, 0;
+  }
+  100% {
+    stroke-dasharray: 10, 0;
+    opacity: 0;
+  }
+}
+
+/* WRITING */
+#line-1 {
+  opacity: 0;
+  animation: writing 0.5s linear forwards;
+}
+
+#line-2 {
+  opacity: 0;
+  animation: writing 0.5s 1s linear forwards;
+}
+
+#line-3 {
+  opacity: 0;
+  animation: writing 0.5s 1.5s linear forwards;
+}
+
+#line-4 {
+  opacity: 0;
+  animation: writing 0.5s 2s linear forwards;
+}
+
+@keyframes writing {
+  0% {
+    width: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 14px;
+    opacity: 1;
+  }
+}
