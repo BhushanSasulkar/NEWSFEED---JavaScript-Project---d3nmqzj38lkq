@@ -102,6 +102,21 @@ main {
   font-size: 1rem;
 }
 
+.btton:hover {
+  background-color: #f58700;
+  /* transform: translateY(-70px); */
+  transform: scale(1.1);
+}
+
+/* .btton:focus {
+  outline: none;
+} */
+
+.btton:active {
+  transform: translateY(2px);
+  /* transform: translateY(-60px); */
+}
+
 .taglineContainer {
   display: block;
   text-align: center;
@@ -171,8 +186,6 @@ h1 {
 
 /* Navigation Styles */
 nav {
-  /* background-color: #fff; */
-  /* padding: 20px; */
   transform: translateY(-5rem);
   display: flex;
   justify-content: space-between;
@@ -253,9 +266,9 @@ main {
 
 footer {
   background-color: black;
-  padding: 10px;
+  padding: 1px;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.9rem;
   color: white;
   margin: 0px;
 }

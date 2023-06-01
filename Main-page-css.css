@@ -61,7 +61,7 @@ header h1 {
 
 .btton {
   display: inline-block;
-  background-color: #ff9800;
+  background-color: #0095ff;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -75,7 +75,7 @@ header h1 {
 }
 
 .btton:hover {
-  background-color: #f57c00;
+  background-color: #004ef5;
   transform: translateY(-70px);
 }
 
@@ -85,7 +85,7 @@ header h1 {
 
 .btton:active {
   transform: translateY(2px);
-  transform: translateY(-70px);
+  transform: translateY(-60px);
 }
 
 .btton:disabled {
@@ -97,7 +97,7 @@ header h1 {
 .container {
   /* /* transform: translateX(200px); */
   /* transform: translateX(-500px); */
-  transform: translate(40px, -213.5px);
+  transform: translate(40px, -213px);
 }
 .both {
   transform: translateY(100px);
