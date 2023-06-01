@@ -16,26 +16,12 @@ setTimeout(() => {
 }, 3000);
 
 const savedNews = [];
-// const handleSavedNews = (savedItem) => {
-//   savedNews.push(savedItem);
-//   console.log(savedNews);
-//   alert("News saved");
-//   saveNews(savedItem);
-// };
-
 const handleSavedNews = (savedItem) => {
-  // Create an object to store the news item and its image
-  const news = {
-    title: savedItem.title,
-    content: savedItem.content,
-    imageUrl: savedItem.imageUrl
-  };
-
-  savedNews.push(news);
+  savedNews.push(savedItem);
   console.log(savedNews);
   alert("News saved");
-  saveNews(savedNews);
-}; 
+  saveNews(savedItem);
+};
 
 // const getNews = (category = "science") => {
 //   newsContainer.innerHTML = "";
@@ -127,7 +113,7 @@ const getNews = async (category = "science") => {
 };
 
 const saveNews = (id) => {
-  const newss = Array.from(document.querySelectorAll(".newsItem")).map(
+  const news = Array.from(document.querySelectorAll(".newsItem")).map(
     (newsItem) => {
       return {
         title: newsItem.querySelector("h2").textContent,
