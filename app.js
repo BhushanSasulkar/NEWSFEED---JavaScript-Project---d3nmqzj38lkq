@@ -16,12 +16,26 @@ setTimeout(() => {
 }, 3000);
 
 const savedNews = [];
+// const handleSavedNews = (savedItem) => {
+//   savedNews.push(savedItem);
+//   console.log(savedNews);
+//   alert("News saved");
+//   saveNews(savedItem);
+// };
+
 const handleSavedNews = (savedItem) => {
-  savedNews.push(savedItem);
+  // Create an object to store the news item and its image
+  const news = {
+    title: savedItem.title,
+    content: savedItem.content,
+    imageUrl: savedItem.imageUrl
+  };
+
+  savedNews.push(news);
   console.log(savedNews);
   alert("News saved");
-  saveNews(savedItem);
-};
+  saveNews(savedNews);
+}; 
 
 // const getNews = (category = "science") => {
 //   newsContainer.innerHTML = "";
