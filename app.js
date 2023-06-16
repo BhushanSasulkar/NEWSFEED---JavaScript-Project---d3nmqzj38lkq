@@ -29,7 +29,8 @@ const getNews = async (category = "science") => {
     newsContainer.innerHTML = "";
 
     const response = await fetch(
-      `https://inshorts.deta.dev/news?category=${category}`
+      // `https://inshorts.deta.dev/news?category=${category}`
+     `https://content.newtonschool.co/v1/pr/64806cf8b7d605c99eecde47/news?category=${category}`
     );
     if (!response.ok) {
       throw new Error("Network response was not ok");
